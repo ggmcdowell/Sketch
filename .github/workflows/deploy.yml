@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - master
+      - claude/skip-permissions-flag-011CUK5VTvmH4nngkjjEDNWj
   workflow_dispatch:
 
 permissions:
