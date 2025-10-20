@@ -9,6 +9,7 @@ modules = [
 
 [compilerOptions]
     pwaEnabled = true
+    basePath = '/Sketch/'
 
 [start]
     map = 'simplemap'
