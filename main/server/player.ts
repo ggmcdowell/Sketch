@@ -1,8 +1,25 @@
 import { RpgPlayer, type RpgPlayerHooks, Control, Components } from '@rpgjs/server'
 
+// Random name generator for dynamic accounts
+const heroNames = [
+    'Brave', 'Swift', 'Mighty', 'Wise', 'Bold', 'Noble', 'Fierce', 'Valiant',
+    'Shadow', 'Storm', 'Fire', 'Ice', 'Thunder', 'Light', 'Dark', 'Wind'
+]
+const titles = [
+    'Warrior', 'Knight', 'Mage', 'Ranger', 'Rogue', 'Paladin', 'Hunter', 'Sage',
+    'Slayer', 'Champion', 'Hero', 'Adventurer', 'Explorer', 'Guardian', 'Defender'
+]
+
+function generateRandomName(): string {
+    const name = heroNames[Math.floor(Math.random() * heroNames.length)]
+    const title = titles[Math.floor(Math.random() * titles.length)]
+    return `${name} ${title}`
+}
+
 const player: RpgPlayerHooks = {
     onConnected(player: RpgPlayer) {
-        player.name = 'Hero'
+        // Auto-generate random name - no login required!
+        player.name = generateRandomName()
         player.setComponentsTop(Components.text('{name}'))
 
         // Set initial stats for combat
