@@ -1,4 +1,4 @@
-name = 'My Game'
+name = 'RPG Adventure'
 
 modules = [
     './main',
@@ -6,6 +6,9 @@ modules = [
     '@rpgjs/default-gui',
     '@rpgjs/gamepad'
 ]
+
+[compilerOptions]
+    pwaEnabled = true
 
 [start]
     map = 'simplemap'
