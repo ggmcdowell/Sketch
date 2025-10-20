@@ -1,2 +1,4 @@
 dist
-node_modulesrpg-game-deploy.tar.gz
+node_modules
+rpg-game-deploy.tar.gz
+*.tar.gz
