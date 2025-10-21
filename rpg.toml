@@ -1,5 +1,8 @@
 name = 'RPG Adventure'
 
+type = 'rpg'
+standalone = true
+
 modules = [
     './main',
     '@rpgjs/mobile-gui',
