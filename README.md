@@ -14,7 +14,9 @@ A browser-based RPG game built with [RPG-JS](https://rpgjs.dev) featuring turn-b
 
 ## Play Online
 
-[Play the game here!](#) _(Link will be available after GitHub Pages deployment)_
+🎮 **[Play the game here!](https://ggmcdowell.github.io/Sketch/)**
+
+> Mobile-optimized! Works great on phones and tablets.
 
 ## Game Controls
 

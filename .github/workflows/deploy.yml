@@ -6,6 +6,7 @@ on:
       - main
       - master
       - claude/skip-permissions-flag-011CUK5VTvmH4nngkjjEDNWj
+      - claude/mobile-game-deployment-audit-011CUKXXfzPPSJvFtiyhCoiw
   workflow_dispatch:
 
 permissions:
