@@ -1,179 +1,298 @@
-# 🚀 Start Here for Next Session
+# Quick Start Guide for Next Session
 
-## Quick Status
+## Current Project Status
 
-✅ **Complete RPG game built and working locally**
-❌ **GitHub Pages deployment shows black screen**
-📦 **All code committed to:** `claude/skip-permissions-flag-011CUK5VTvmH4nngkjjEDNWj`
+**Project:** Mercury's Ashes - Hard Sci-Fi LitRPG Novel
+**Current Branch:** `claude/mercury-rpg-narrative-011CUREenfiKu271wJNyowzF`
+**Status:** Chapter 1 complete, ready for Chapter 2
 
 ---
 
-## 🎯 Immediate Action Items
+## For Next Claude Code Session
 
-### 1. **Test Locally First** (5 minutes)
-
+### Step 1: Create Your Branch from Current Work
 ```bash
-cd /home/user/Sketch
-npm install
-npm run dev
+git checkout claude/mercury-rpg-narrative-011CUREenfiKu271wJNyowzF
+git checkout -b claude/continue-writing-[YOUR-SESSION-ID]
+git push -u origin claude/continue-writing-[YOUR-SESSION-ID]
 ```
 
-Open http://localhost:3000 - **Does the game work?**
+### Step 2: Read These Files First (In Order)
+1. **README.md** - Project overview
+2. **STYLE_GUIDE.md** - Author's voice (CRITICAL - read this!)
+3. **chapters/chapter_01.md** - Completed Chapter 1
+4. **INTEGRATION_NOTES.md** - How to continue writing
 
-- ✅ **If YES:** The game code is fine, it's just a deployment issue
-- ❌ **If NO:** There's a code problem to fix first
-
----
-
-### 2. **Debug GitHub Pages** (10 minutes)
-
-Visit the deployed site: https://ggmcdowell.github.io/Sketch/
-
-**Open Browser DevTools (F12) and check:**
-
-1. **Console Tab:**
-   - Any red error messages?
-   - What's the specific error?
-   - Screenshot and note it down
-
-2. **Network Tab:**
-   - Refresh the page
-   - Any 404 errors?
-   - Are assets loading from correct paths?
-   - Check if `/Sketch/assets/...` files are found
-
-3. **Common Issues to Look For:**
-   - `Failed to fetch` errors → Server connection issue
-   - `404 Not Found` → Asset path wrong
-   - `SyntaxError` → JavaScript issue
-   - `CORS error` → Cross-origin problem
+### Step 3: You're Ready to Write Chapter 2
 
 ---
 
-### 3. **Try Alternative Deployment** (2 minutes)
+## What's Complete ✅
 
-If GitHub Pages continues to fail, try Netlify:
+### Foundation Documents
+- **RULESET.md** - Complete LitRPG mechanics (MERIT system, stats, progression)
+- **WORLDBUILDING.md** - Solar System 2650 (Iron and Sons, Solar Catch, Mercury culture)
+- **OUTLINE.md** - 10-chapter story arc (adapt as needed)
+- **STYLE_GUIDE.md** - Author's prose style (sparse, industrial, blue-collar)
 
+### Chapter 1
+- **File:** `chapters/chapter_01.md`
+- **Status:** Complete and finalized
+- **Ends:** Lathe boards the *Long Walk*, "Just three more runs, and then his life could really begin."
+- **LitRPG Integration:** Minimal (MERIT implant mentioned, one status display)
+
+### Reference Materials
+- **reference/character_profiles.md** - Lathe, family, Mon Rag
+- **reference/ships_and_tech.md** - *Long Walk* specs, technology details
+
+---
+
+## What to Write Next: Chapter 2
+
+### Chapter 2 Structure (Author's Intent)
+- **Title:** "The Caloris Event" or similar
+- **Location:** Aboard *Long Walk*, in transit to Venus
+
+### Scenes to Include:
+
+**Scene 1: Launch and Departure**
+- Preflight sequence (blue box showing ship systems)
+- MERIT neural sync with ship
+- Departure from Mercury Harbor Station
+- Main engine burn, acceleration
+- Lathe's routine check, then cryo-prep
+
+**Scene 2: The Alarm**
+- Wakes from cryo early (6 days into 47-day journey)
+- Irene reports solar event
+- Emergency broadcast from Mercury (then cuts off)
+
+**Scene 3: The Caloris Event**
+- Solar flare magnitude X-147
+- Mercury's magnetic field collapse
+- Surface temperature spike
+- Atmospheric stripping
+- All transmissions cease
+
+**Scene 4: Lathe's Reaction**
+- Tries to contact father, sister
+- FAILED: NO DESTINATION FOUND
+- Processes loss of 47 million people
+- MERIT system detects trauma
+
+**Scene 5: Conviction Spike**
+- Blue box: PSYCHOLOGICAL ALERT
+- CNV +10 (now at 18)
+- Trauma Response passive unlocks
+- System warns about decision tree changes
+
+**Scene 6: The Question**
+- What does he do now?
+- Continue to Venus? Return to Mercury debris field?
+- Seeds of radicalization planted
+- Chapter ends with his decision
+
+---
+
+## Critical Style Points (from STYLE_GUIDE.md)
+
+### Prose Style
+- **Short, punchy sentences:** "It was fuel, nothing more."
+- **Physical details over emotions:** Cold, metallic, weight, darkness
+- **Sparse dialogue:** Functional, no small talk
+- **Emotional restraint:** "A wave of something akin to guilt"
+
+### LitRPG Integration Rules
+1. **Utilitarian presentation** - HUD readouts, not game notifications
+2. **Industrial language** - "Neural sync" not "soul bond"
+3. **Minimal intrusion** - Background system, not constant pop-ups
+4. **Blue boxes** only for significant moments (not every action)
+
+### Blue Box Format (Industrial Style)
+```
+╔════════════════════════════════════════╗
+║ MERIT PSYCHOLOGICAL ALERT              ║
+║                                        ║
+║ Trauma response detected               ║
+║ Baseline metrics compromised           ║
+║                                        ║
+║ CONVICTION +10                         ║
+║ Current: 18 / 100                      ║
+║                                        ║
+║ WARNING: Elevated CNV affects          ║
+║ decision trees and risk assessment     ║
+╚════════════════════════════════════════╝
+```
+
+### Example: Writing the Caloris Event in Author's Voice
+
+```
+The alarm woke him from cryo six days into the burn.
+
+That wasn't right.
+
+"Irene, why am I awake?"
+
+Silence. Then: "Solar event detected. Mercury Harbor Station has
+issued emergency broadcast. All ships are advised to—"
+
+The transmission cut off.
+
+He pulled himself from the cryo pod, his limbs sluggish, frost
+still clinging to his skin. The cockpit was dark except for the
+emergency lighting. Red.
+
+"Irene. Status."
+
+"Solar flare magnitude X-147. Magnetic channeling effect observed.
+Mercury planetary magnetic field collapsed at 04:17 UTC. Surface
+temperature spike detected. Atmospheric stripping confirmed.
+Station broadcasts ceased at 04:23 UTC."
+
+Six minutes. Mercury's magnetic field lasted six minutes.
+
+He tried the compad. Pulled up his father's contact.
+
+FAILED: NO DESTINATION FOUND
+
+His sister's contact.
+
+FAILED: NO DESTINATION FOUND
+
+The Ice Bowl. Harbor Station. Caloris Basin. All of it.
+
+Gone.
+
+Forty-seven million people. Gone.
+
+The MERIT implant chimed. He dismissed the alert without reading.
+
+He sat in the darkness, listening to the hum of the reactor,
+and felt nothing.
+
+Then he felt everything.
+```
+
+---
+
+## Key World Details (Author's Canon)
+
+### Year & Technology
+- **2650** (not 2400 from original outline)
+- MERIT implants standard since 2630
+- Cryo-sleep for long transits
+- Hard sci-fi: No FTL, no aliens, Newtonian physics
+
+### Characters
+- **Lathe Anderson** - 30 years old, freighter pilot, 8,247 flight hours
+- **Father** - Retired pilot, lives in Ice Bowl with mother
+- **Sister** - Youngest of 8 siblings (7 brothers, 1 sister), unnamed yet
+- **Mon Rag** - Logistics clerk, known Lathe for years
+- **Irene** - Ship AI, *Long Walk*
+
+### Locations
+- **Mercury Harbor Station** - Main orbital station
+- **Ice Bowl** - Northern pole settlement, families/retirees
+- **Caloris Basin** - Major surface colony (destroyed)
+
+### Organizations
+- **Iron and Sons** - Major mining/construction corporation
+- **Solar Catch** - Dyson swarm project near Sun
+- **Construction Armada** - Elite fleet (Lathe wants to join)
+
+### Ship: *Long Walk*
+- Bulk freighter, 40 stories tall vertical
+- Family heirloom (father's ship)
+- Cargo capacity: 8,000+ tons
+- AI: Irene
+- Well-maintained RCS, worn everything else
+
+---
+
+## Author Preferences
+
+### What the Author Wants
+- Sparse, blue-collar prose
+- Minimal LitRPG intrusion (additive, not replacive)
+- Hard sci-fi grounded in physics
+- Emotional restraint, show don't tell
+- Industrial atmosphere
+
+### What to Avoid
+- Fantasy language in LitRPG elements
+- Over-explaining world details
+- Melodrama or sentimentality
+- Constant stat updates
+- Breaking the author's voice
+
+---
+
+## Questions the Author Hasn't Decided Yet
+
+1. **Sister's name** - Not specified yet
+2. **Sister's fate** - Does she die in Caloris Event or survive?
+   - If dies: Cleaner motivation for radicalization
+   - If survives: More complex family dynamics
+3. **Recruitment** - Who recruits Lathe to resistance? When?
+4. **Timeline** - How long between Mercury event and first combat?
+
+**Recommendation:** Ask the author these questions before writing too far into Chapter 2.
+
+---
+
+## File Structure
+```
+/
+├── README.md
+├── STYLE_GUIDE.md          ← READ THIS FIRST
+├── INTEGRATION_NOTES.md    ← How to continue
+├── RULESET.md
+├── WORLDBUILDING.md
+├── OUTLINE.md
+├── /chapters
+│   ├── chapter_01.md       ← Complete
+│   └── chapter_02.md       ← Write this next
+└── /reference
+    ├── character_profiles.md
+    └── ships_and_tech.md
+```
+
+---
+
+## Quick Commands
+
+### Continue Writing
 ```bash
-cd /home/user/Sketch
-RPG_TYPE=rpg npm run build
+# Create your branch from current work
+git checkout claude/mercury-rpg-narrative-011CUREenfiKu271wJNyowzF
+git checkout -b claude/writing-[SESSION-ID]
+
+# Write Chapter 2
+# Save to: chapters/chapter_02.md
+
+# Commit
+git add chapters/chapter_02.md
+git commit -m "Add Chapter 2: [title]"
+git push -u origin claude/writing-[SESSION-ID]
 ```
 
-Then drag the `dist/` folder to: https://app.netlify.com/drop
-
-**Does it work on Netlify?**
-- ✅ **If YES:** GitHub Pages has a specific config issue
-- ❌ **If NO:** The standalone build itself has problems
-
----
-
-## 🔍 What to Check Based on Errors
-
-### **If Error: "Cannot connect to server"**
-The game is trying to connect to a WebSocket server. Check:
-- Is `RPG_TYPE=rpg` set during build?
-- Check `rpg.toml`: Is `type = 'rpg'` and `standalone = true`?
-- Rebuild with: `RPG_TYPE=rpg npm run build`
-
-### **If Error: "404 on assets"**
-Assets aren't loading from the right path. Check:
-- `vite.config.js`: Is `base: '/Sketch/'` set?
-- View page source: Are script tags using `/Sketch/assets/...`?
-- Try changing base to `'./'` for relative paths
-
-### **If Error: "Uncaught SyntaxError"**
-JavaScript module issue. Check:
-- Are all imports using correct paths?
-- Check browser console for the specific file
-- May need to update module exports
-
-### **If No Errors But Black Screen**
-The game is loading but not initializing. Check:
-- View page source: Is the `<div id="rpg"></div>` present?
-- Console: Any warnings about missing modules?
-- Try adding `console.log()` to main.ts to see if code runs
+### Reference While Writing
+- Check STYLE_GUIDE.md when unsure about voice
+- Check RULESET.md for MERIT mechanics
+- Check INTEGRATION_NOTES.md for blue box examples
 
 ---
 
-## 📂 Files to Review
+## Success Criteria for Chapter 2
 
-1. **`PROJECT_SUMMARY.md`** - Complete overview of what was built
-2. **`rpg.toml`** - RPG-JS configuration (check `type` and `standalone`)
-3. **`vite.config.js`** - Build configuration (check `base` path)
-4. **`.github/workflows/deploy.yml`** - Deployment workflow (check `RPG_TYPE`)
-5. **`package.json`** - Build scripts and dependencies
-
----
-
-## 🛠️ Quick Fixes to Try
-
-### Fix 1: Use Relative Base Path
-```js
-// vite.config.js
-export default defineConfig({
-  base: './',  // Try relative instead of absolute
-})
-```
-
-### Fix 2: Verify Standalone Mode
-```bash
-# Check build output
-RPG_TYPE=rpg npm run build
-ls -la dist/  # Should NOT have client/ and server/ folders
-```
-
-### Fix 3: Test Without Base Path
-```toml
-# rpg.toml - comment out basePath temporarily
-[compilerOptions]
-    pwaEnabled = true
-    # basePath = '/Sketch/'  # Try without this
-```
+- [ ] Matches author's prose style (sparse, industrial)
+- [ ] Caloris Event is visceral but restrained
+- [ ] MERIT Conviction spike shown (blue box)
+- [ ] Lathe's reaction feels authentic to his character
+- [ ] Ends with decision/direction (what does he do now?)
+- [ ] 2-4 blue boxes total (not more)
+- [ ] No game-y language, all utilitarian
 
 ---
 
-## 🎮 What Works
-
-The game has ALL features complete:
-- ✅ Turn-based combat with Goblins & Slimes
-- ✅ Quest system with 2 quests
-- ✅ Random player name generation
-- ✅ Mobile touch controls
-- ✅ Python-generated sprites
-- ✅ Full TypeScript codebase
-
-**It DOES work in development mode!** (`npm run dev`)
-
-The only issue is getting it to work on GitHub Pages static hosting.
-
----
-
-## 💡 Alternative Solutions
-
-If GitHub Pages continues to be problematic:
-
-1. **Deploy to Netlify** - Usually works better with SPAs
-2. **Deploy to Vercel** - Great for Vite projects
-3. **Use GitHub Pages with different setup** - Deploy from a different branch
-4. **Run on a real server** - Use the MMORPG mode with Node.js
-
----
-
-## 📞 Get Help
-
-- **RPG-JS Discord:** https://discord.gg/rpgjs
-- **RPG-JS Docs:** https://docs.rpgjs.dev/
-- **Check Examples:** https://github.com/rpgjs/starter
-
----
-
-## ✅ Before You Start
-
-1. Read `PROJECT_SUMMARY.md` for full context
-2. Make sure you're on branch: `claude/skip-permissions-flag-011CUK5VTvmH4nngkjjEDNWj`
-3. Run `git pull` to get latest changes
-4. Run `npm install` to ensure dependencies are installed
-
----
-
-**Good luck! The game is 95% done - just need to fix the deployment!** 🎮
+You're all set! Read STYLE_GUIDE.md first, then start writing Chapter 2.
