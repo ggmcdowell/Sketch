@@ -1,161 +1,60 @@
-# RPG Adventure Game
+# Mercury's Ashes
+## A Hard Sci-Fi LitRPG Novel
 
-A browser-based RPG game built with [RPG-JS](https://rpgjs.dev) featuring turn-based combat, quests, and procedurally generated pixel art sprites.
+### Logline
+A freighter pilot's world burns when Mercury is destroyed—radicalized by loss, he masters Newtonian combat and guerrilla engineering to strike back at Earth in humanity's first orbital war.
 
-## Features
+### Genre
+LitRPG / Hard Science Fiction / Military SF
 
-- **Turn-based Combat System**: Fight enemies with Attack, Defend, and Run options
-- **Quest System**: Accept quests from NPCs and earn rewards
-- **Enemy Types**:
-  - **Goblins**: Aggressive enemies with moderate stats
-  - **Slimes**: Weaker enemies, easier to defeat
-- **Python-generated Sprites**: All enemy sprites are generated using Python/Pillow
-- **Progressive Gameplay**: Complete quests to earn gold and experience
+### Concept
+This is a LitRPG novel following **Lathe**, a freighter pilot in 2400 whose homeworld Mercury is destroyed by a catastrophic solar flare. Blaming Earth's Dyson swarm project for destabilizing the Sun, he joins the Mercurian resistance and evolves from civilian hauler to ace fighter pilot and combat engineer. The story ends with the stunning First Battle of Earth, where a ramshackle rebel fleet cripples Earth's orbital infrastructure.
 
-## Play Online
+**Key Hook:** Authentic Newtonian physics drives both combat mechanics and character progression. Delta-v budgets, heat management, and orbital mechanics aren't just flavor—they're core LitRPG systems.
 
-[Play the game here!](#) _(Link will be available after GitHub Pages deployment)_
+### Core Elements
+- **Hard Sci-Fi:** No FTL, no magic, no aliens. Physics-accurate orbital combat and ship maneuvering
+- **LitRPG Mechanics:** MERIT neural implant system gamifies pilot skills, ship upgrades, and combat performance
+- **Dual Progression:** Both pilot stats AND ship systems level up independently
+- **Engineering Subclass:** Mid-story unlock allows crafting custom weapons and modifications from salvage
+- **Radicalization Arc:** Conviction stat tracks Lathe's ideological transformation, unlocking darker tactics
 
-## Game Controls
-
-- **Arrow Keys / WASD**: Move your character
-- **Enter / Space**: Interact with NPCs and enemies
-- **ESC**: Open menu
-
-## Getting Started Locally
-
-### Prerequisites
-
-- Node.js (>= 14)
-- Python 3 with Pillow (for sprite generation)
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/ggmcdowell/Sketch.git
-cd Sketch
-
-# Install dependencies
-npm install
-
-# Generate sprites (optional - sprites are already included)
-pip install Pillow
-python3 generate_sprites.py
-
-# Start development server
-npm run dev
+### Project Structure
+```
+/
+├── README.md (this file)
+├── RULESET.md (complete LitRPG mechanics and physics systems)
+├── OUTLINE.md (chapter-by-chapter breakdown)
+├── WORLDBUILDING.md (solar system politics, technology, factions)
+├── /chapters
+│   ├── chapter_01.md
+│   ├── chapter_02.md
+│   └── ... (10-12 chapters planned)
+└── /reference
+    ├── character_profiles.md
+    ├── ships_and_tech.md
+    └── physics_notes.md
 ```
 
-Navigate to [http://localhost:3000](http://localhost:3000)
+### Status
+**Phase:** Pre-production (Ruleset and Outline)
+**Target:** 2-3 sample chapters (60,000-90,000 words for complete arc)
 
-## Building for Production
-
-```bash
-npm run build
-```
-
-The built files will be in the `dist/` directory.
-
-## Project Structure
-
-```
-├── main/
-│   ├── client/
-│   │   ├── spritesheets/     # Character and enemy sprites
-│   │   └── index.ts          # Client module
-│   ├── server/
-│   │   ├── events/           # NPCs and enemy logic
-│   │   │   ├── goblin.ts     # Goblin enemy with AI
-│   │   │   ├── slime.ts      # Slime enemy
-│   │   │   ├── quest_giver.ts # Quest NPC
-│   │   │   └── villager.ts   # Friendly NPC
-│   │   ├── worlds/           # Game maps
-│   │   ├── player.ts         # Player configuration
-│   │   └── index.ts          # Server module
-│   └── index.ts              # Main module entry
-├── generate_sprites.py       # Python sprite generator
-└── package.json
-```
-
-## Game Mechanics
-
-### Combat
-
-When you encounter an enemy, you enter turn-based combat:
-- **Attack**: Deal damage based on your ATK stat minus enemy defense
-- **Defend**: Reduce incoming damage by 50%
-- **Run**: Attempt to escape (success chance varies by enemy)
-
-### Quests
-
-Find the Quest Giver (NPC with pink hair) to accept quests:
-- **Goblin Menace**: Defeat 3 goblins → Reward: 50 gold + HP restore
-- **Slime Cleanup**: Defeat 5 slimes → Reward: 35 gold
-
-### Character Stats
-
-- **HP**: Health points (100 max)
-- **ATK**: Attack power (10 base)
-- **PDEF**: Physical defense (5 base)
-- **Gold**: Currency earned from quests and enemies
-
-## Sprite Generation
-
-Sprites are generated using Python with the Pillow library. To regenerate sprites:
-
-```bash
-python3 generate_sprites.py
-```
-
-This creates:
-- `main/client/spritesheets/characters/hero_generated.png`
-- `main/client/spritesheets/enemies/goblin.png`
-- `main/client/spritesheets/enemies/slime.png`
-
-Each sprite sheet follows the RPG Maker format (3 frames × 4 directions).
-
-## Technologies Used
-
-- **[RPG-JS](https://rpgjs.dev)**: RPG framework for browser games
-- **TypeScript**: Type-safe game logic
-- **Vue.js**: UI components (dialogs, menus)
-- **PixiJS**: WebGL rendering
-- **Vite**: Build tool
-- **Python + Pillow**: Sprite generation
-
-## Deployment
-
-This game can be deployed to:
-- **GitHub Pages**: Static hosting
-- **Netlify**: Automatic deployment
-- **Vercel**: Serverless deployment
-
-See the `netlify.toml` and `vercel.json` files for configuration.
-
-## Contributing
-
-Contributions are welcome! Feel free to:
-- Add new enemy types
-- Create new quests
-- Improve combat mechanics
-- Design better sprites
-
-## License
-
-This project uses assets from various sources:
-- Framework: [RPG-JS](https://github.com/RSamaium/RPG-JS) (MIT License)
-- Tilesets: [Pipoya](https://pipoya.itch.io)
-- Sounds: [Davidvitas](https://www.davidvitas.com/) (CC BY 4.0)
-
-Game code is open source under MIT License.
-
-## Credits
-
-- Built with RPG-JS framework
-- Sprites generated with Python/Pillow
-- Created as a demo RPG project
+### Writing Approach
+- **Blue boxes** for level-ups, skill unlocks, and system notifications
+- **Integrated mechanics** - stats inform narrative tension (e.g., "Δv reserves: 247 m/s. Not enough to get home.")
+- **Progression fantasy** meets **hard SF** - satisfying power growth within physical constraints
 
 ---
 
-**Have fun playing!** 🎮⚔️
+## Quick Start
+
+1. Read `RULESET.md` for complete LitRPG mechanics
+2. Read `OUTLINE.md` for story structure
+3. Read `WORLDBUILDING.md` for setting details
+4. Chapters are in `/chapters` folder
+
+---
+
+**Author Notes:**
+This project explores radicalization through the lens of LitRPG progression. As Lathe gains power, he loses innocence. The Conviction stat isn't just a number—it's a one-way door.

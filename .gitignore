@@ -1,4 +1,21 @@
-dist
-node_modules
-rpg-game-deploy.tar.gz
-*.tar.gz
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build outputs
+/build/
+/dist/
+
+# Node modules (if any tools added later)
+node_modules/
+
+# Personal notes (not for version control)
+/notes/
+scratch.md
